@@ -72,3 +72,18 @@ Version **1.2.0** extends JUMPt’s deterministic solver to handle datasets expr
 - **Dependencies:**
   ```bash
   pip install numpy pandas scipy openpyxl
+
+  ## Hardware
+
+**Multi-core CPU and ≥16 GB RAM** are recommended for large proteome datasets.
+
+---
+
+## Installation
+
+### Option A – Run in Place
+```bash
+git clone https://github.com/<your-org>/JUMPt_v1.2.0.git
+cd JUMPt_v1.2.0
+python jumpt_main.py --params JUMPt_main.params
+
