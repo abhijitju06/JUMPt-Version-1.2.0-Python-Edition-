@@ -130,4 +130,65 @@ Execute:
 ```bash
 python jumpt_main.py --params JUMPt_main.params
 
+## Console Output
+
+The console automatically reports the processing mode:
+
+```bash
+Welcome to JUMPt Python (hours mode)...
+
+or
+
+```bash
+Welcome to JUMPt Python (days mode)...
+
+Batch progress messages show optimization status, for example:
+
+```bash
+Optimizing proteins 1–30 (of 247)
+
+## Output Files
+
+Two Excel files are generated in the same directory as the input file:
+
+| File | Description |
+|------|--------------|
+| **results_Corrected_T50_<input>.xlsx** | Corrected half-lives (hours/days), confidence intervals, residuals, extremes, and parameter provenance |
+| **results_Apparent_T50_<input>.xlsx** | Apparent half-lives from exponential fits |
+
+---
+
+### Display Limits
+
+- `<0.5 h` for sub-hour turnover  
+- `>2400 h` or `>100 d` for extremely stable proteins  
+
+---
+
+## Authors
+
+**Dr. Abhijit Dasgupta** — SRM University AP, India  
+**Abhisek Bakshi**
+
+---
+
+## Maintainers
+
+For bug reports or feature suggestions, please open a GitHub Issue or contact:  
+📧 **abhijitju06@gmail.com**
+
+---
+
+## Acknowledgments
+
+We acknowledge the support of **St. Jude Children’s Research Hospital**, **ALSAC**, and the **U.S. National Institutes of Health** for enabling the JUMP software suite.
+
+---
+
+## References
+
+1. Chepyala et al., *Analytical Chemistry*, 93(40): 13495–13504 (2021)  
+2. Wang X. et al., *Molecular & Cellular Proteomics*, 13(12): 3663–3673 (2014)  
+3. Li W. et al., *Cell*, 188(8): 2267–2287 (2025)  
+4. Yarbro J.M. et al., *Nature Communications*, 16(1): 1533 (2025)
 
