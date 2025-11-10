@@ -6,6 +6,8 @@
 **JUMPt v1.2.0** — Deterministic dual–time–unit implementation (supports both **hours** and **days**) with complete Python-based reproducibility.  
 *(Previous: JUMPt v1.1.1 — days only)*
 
+> Looking for the previous release? **JUMPt Version 1.1.1** → **[Go to the older repository](https://github.com/abhijitju06/JUMPt-Version-1.1.1-)**.
+
 ---
 
 ## Table of Contents
