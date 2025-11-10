@@ -87,3 +87,47 @@ git clone https://github.com/<your-org>/JUMPt_v1.2.0.git
 cd JUMPt_v1.2.0
 python jumpt_main.py --params JUMPt_main.params
 
+## Input Data Preparation
+
+Prepare an Excel file (`.xlsx`) with the following structure:
+
+| Row | Description |
+|-----|--------------|
+| 1 | Pulse time points (in hours or days) |
+| 2 | Total Lys (concentration) |
+| 3 | Free Lys fraction |
+| 4 → N | Protein labeling fractions |
+
+**Example files**
+- `7951_Rep1_K_Hours.xlsx` → *in vitro* dataset  
+- `Small_Cell_Cere_Inputs.xlsx` → *in vivo* dataset  
+
+The program automatically detects the time unit from the parameter file and numeric range.
+
+---
+
+## Parameter File Configuration
+
+Edit `JUMPt_main.params` before running.
+
+| Category | Parameter | Description |
+|-----------|------------|-------------|
+| Input | `input_file` | Full path to Excel dataset |
+| Units | Auto-detected (*hours* or *days*) |
+| Bounds | `display_min_hours`, `display_max_hours`, `display_min_days`, `display_max_days` | Display thresholds |
+| Physics | `disable_physics_filter`, `physics_filter_mode` | Controls for enforcing physical constraints |
+| Runtime | `n_starts`, `max_nfev_global`, `max_nfev_refine`, `use_refine`, `expm_safe_magnitude` | Runtime tuning |
+| Reproducibility | `random_seed` | Ensures deterministic behavior |
+
+Lines beginning with `;`, `#`, or `%` are treated as comments.
+
+---
+
+## Running JUMPt
+
+Execute:
+
+```bash
+python jumpt_main.py --params JUMPt_main.params
+
+
