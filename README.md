@@ -126,7 +126,7 @@ Edit `JUMPt_main.params` before running.
 |-----------|------------|-------------|
 | Input | `input_file` | Full path to Excel dataset |
 | Units | Auto-detected (*hours* or *days*) |
-| Bounds | `display_min_hours`, `display_max_hours`, `display_min_days`, `display_max_days` | Display thresholds |
+| Bounds | `display_min_hours`, `display_max_hours` | Display thresholds |
 | Physics | `disable_physics_filter`, `physics_filter_mode` | Controls for enforcing physical constraints |
 | Runtime | `n_starts`, `max_nfev_global`, `max_nfev_refine`, `use_refine`, `expm_safe_magnitude` | Runtime tuning |
 | Reproducibility | `random_seed` | Ensures deterministic behavior |
