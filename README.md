@@ -85,10 +85,20 @@ Version **1.2.0** extends JUMPt’s deterministic solver to handle datasets expr
 
 ### Option A – Run in Place <br>
 ```bash
-git clone https://github.com/<your-org>/JUMPt_v1.2.0.git
-cd JUMPt_v1.2.0
+git clone https://github.com/abhijitju06/JUMPt-Version-1.2.0-Python-Edition-.git
+cd JUMPt-Version-1.2.0-Python-Edition-
 python jumpt_main.py --params JUMPt_main.params
 ```
+### Option B – Install as a Package <br>
+If you prefer to install JUMPt system-wide or into a virtual environment:
+
+```bash
+git clone https://github.com/abhijitju06/JUMPt-Version-1.2.0-Python-Edition-.git
+cd JUMPt-Version-1.2.0-Python-Edition-
+pip install .
+jumpt --params JUMPt_main.params
+```
+
 ## Input Data Preparation <br>
 
 Prepare an Excel file (`.xlsx`) with the following structure:
