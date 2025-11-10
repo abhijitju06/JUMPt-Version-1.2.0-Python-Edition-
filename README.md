@@ -86,7 +86,7 @@ Version **1.2.0** extends JUMPt’s deterministic solver to handle datasets expr
 git clone https://github.com/<your-org>/JUMPt_v1.2.0.git
 cd JUMPt_v1.2.0
 python jumpt_main.py --params JUMPt_main.params
-
+```
 ## Input Data Preparation
 
 Prepare an Excel file (`.xlsx`) with the following structure:
@@ -129,24 +129,24 @@ Execute:
 
 ```bash
 python jumpt_main.py --params JUMPt_main.params
-
+```
 ## Console Output
 
 The console automatically reports the processing mode:
 
 ```bash
 Welcome to JUMPt Python (hours mode)...
-
+```
 or
 
 ```bash
 Welcome to JUMPt Python (days mode)...
-
+```
 Batch progress messages show optimization status, for example:
 
 ```bash
 Optimizing proteins 1–30 (of 247)
-
+```
 ## Output Files
 
 Two Excel files are generated in the same directory as the input file:
@@ -168,7 +168,6 @@ Two Excel files are generated in the same directory as the input file:
 ## Authors
 
 **Dr. Abhijit Dasgupta** — SRM University AP, India  
-**Abhisek Bakshi**
 
 ---
 
