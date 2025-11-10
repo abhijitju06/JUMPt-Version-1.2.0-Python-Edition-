@@ -1,0 +1,39 @@
+# -------- Required -----------
+input_file = 7951_Rep1_K_Hours.xlsx
+pulse_time_unit = hours   # or: hours or: days
+
+# -------- Common ------------
+number_of_timepoints = 3
+bin_size = 30
+purity_of_SILAC_food = 99.0
+alphaUB = 0.10
+disable_physics_filter = 1         # IMPORTANT: OFF to reproduce <0.5 d cases 
+physics_filter_mode = clip # ignored if disable_physics_filter=1
+min_observations_per_protein = 2   # allow 2-point proteins (common in your sheet)
+free_lys_weight_mode = matlab      # sets wF = M/5 per bin 
+initial_condition_mode = data # use first observation at t0 if present
+apparent_T50_calculation = 1
+random_seed = 12345
+n_starts = 20
+max_nfev_global = 800
+max_nfev_refine = 400
+sort_by_apparent_t50 = 0
+
+# -------- Bounds for DAYS (unchanged from your code) ----------
+hl_tmin_days = 0.03
+hl_tmax_days = 100.0
+hl_A_min_days = 1.0
+hl_A_max_days = 100.0
+
+# ----- HOURS RUNTIME TUNING -----
+n_starts = 6
+max_nfev_global = 400
+max_nfev_refine = 200
+use_refine = 0            # set 1 to enable LM refine, 0 to skip for speed
+expm_safe_magnitude = 400 # 400–800 is usually good and fast
+
+# Numerics / physical sanity
+internal_min_hours = 0.02 # ~1.2 min, not used for display
+hl_tmax_hours      = 2400
+display_min_hours  = 0.5
+display_max_hours  = 2400
