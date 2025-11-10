@@ -512,7 +512,7 @@ def main(params_path: str):
     if not os.path.exists(input_file):
         raise FileNotFoundError(input_file)
 
-    print("\n\n  Welcome to JUMPt Python (matched mode)...\n")
+    print("\n\n  Welcome to JUMPt Python (days mode)...\n")
     binbuild = build_binning(P)
     print("  Completed reading input file.\n  Now fitting the protein data and calculating corrected half-lives...\n")
 
