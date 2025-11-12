@@ -1,6 +1,6 @@
 # -------- Required -----------
-input_file = 7951_Rep1_K_Hours.xlsx
-pulse_time_unit = hours   # or: hours or: days
+input_file = Spleen.xlsx
+pulse_time_unit = days   # or: hours or: days
 
 # -------- Common ------------
 number_of_timepoints = 3
@@ -26,10 +26,10 @@ hl_A_min_days = 1.0
 hl_A_max_days = 100.0
 
 # ----- HOURS RUNTIME TUNING -----
-n_starts = 6
+#n_starts = 6
 max_nfev_global = 400
 max_nfev_refine = 200
-use_refine = 0            # set 1 to enable LM refine, 0 to skip for speed
+use_refine = 1            # set 1 to enable LM refine, 0 to skip for speed
 expm_safe_magnitude = 400 # 400–800 is usually good and fast
 
 # Numerics / physical sanity

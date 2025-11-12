@@ -23,6 +23,10 @@ from scipy.stats import t as student_t
 
 # keep console quieter
 warnings.filterwarnings("ignore", category=DeprecationWarning)
+warnings.filterwarnings("ignore", category=RuntimeWarning, message="overflow encountered in exp")
+warnings.filterwarnings("ignore", category=RuntimeWarning, message="invalid value encountered in matmul")
+warnings.filterwarnings("ignore", category=RuntimeWarning, message="overflow encountered in matmul")
+
 
 LN2 = math.log(2.0)
 
